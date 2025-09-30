@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     proxmox (0.1.0)
+      faraday (~> 2.14)
 
 GEM
   remote: https://rubygems.org/
@@ -10,6 +11,12 @@ GEM
     date (3.4.1)
     diff-lcs (1.6.2)
     erb (5.0.2)
+    faraday (2.14.0)
+      faraday-net_http (>= 2.0, < 3.5)
+      json
+      logger
+    faraday-net_http (3.4.1)
+      net-http (>= 0.5.0)
     io-console (0.8.1)
     irb (1.15.2)
       pp (>= 0.6.0)
@@ -18,6 +25,9 @@ GEM
     json (2.15.0)
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
+    logger (1.7.0)
+    net-http (0.6.0)
+      uri
     parallel (1.27.0)
     parser (3.3.9.0)
       ast (~> 2.4.1)
@@ -70,12 +80,14 @@ GEM
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
     unicode-emoji (4.1.0)
+    uri (1.0.3)
 
 PLATFORMS
   ruby
   x86_64-linux
 
 DEPENDENCIES
+  faraday (~> 2.14)
   irb
   proxmox!
   rake (~> 13.0)
