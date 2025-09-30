@@ -1,5 +1,7 @@
 # Proxmox
 
+[![Gem Version](https://badge.fury.io/rb/proxmox-sdk.svg)](https://badge.fury.io/rb/proxmox-sdk)
+
 A lightweight Ruby gem that provides a clean, idiomatic interface to the Proxmox VE REST API. It handles authentication, token management, and all common API endpoints (nodes, virtual machines, storage, containers, etc.) so you can focus on building automation, orchestration, or custom tooling without dealing with raw HTTP calls.
 
 ## Installation
