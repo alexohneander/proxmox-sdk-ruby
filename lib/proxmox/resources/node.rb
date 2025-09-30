@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 module Proxmox
   module Resources
+    # Proxmox Node Class
     class Node
       def initialize(client, node_name)
         @client = client
