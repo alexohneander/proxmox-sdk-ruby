@@ -9,10 +9,17 @@ module Proxmox
         @node   = node_name
       end
 
+      # Getting status of the Node
       def status
         @client.request(:get, "/nodes/#{@node}/status")
       end
 
+      # Getting a list of updates for the Node
+      def updates
+        @client.request(:get, "/nodes/#{@node}/apt/update")
+      end
+
+      # Creating Resources
       def create_vm(params)
         @client.request(:post, "/nodes/#{@node}/qemu", {}, params)
       end
