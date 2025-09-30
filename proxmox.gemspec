@@ -3,7 +3,7 @@
 require_relative "lib/proxmox/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "proxmox"
+  spec.name = "proxmox-sdk"
   spec.version = Proxmox::VERSION
   spec.authors = ["Alex Wellnitz"]
   spec.email = ["moin@wellnitz-alex.de"]
