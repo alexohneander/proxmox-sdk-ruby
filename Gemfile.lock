@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    proxmox-sdk (0.1.0)
+    proxmox-sdk (0.1.1)
       faraday (~> 2.14)
 
 GEM
