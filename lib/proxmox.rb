@@ -3,6 +3,7 @@
 require "proxmox/version"
 require "proxmox/client"
 require "proxmox/resources/cluster"
+require "proxmox/resources/clusters/acme"
 require "proxmox/resources/node"
 
 module Proxmox
