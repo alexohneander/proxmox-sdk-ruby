@@ -28,6 +28,20 @@ module Proxmox
       login
     end
 
+    def cluster
+      @cluster ||= Proxmox::Resources::Cluster.new(self)
+    end
+
+    def node(name)
+      Proxmox::Resources::Node.new(self, name)
+    end
+
+    def nodes
+      request(:get, "/nodes").map do |node_data|
+        Proxmox::Resources::Node.new(self, node_data)
+      end
+    end
+
     def login
       resp = http.post("/api2/json/access/ticket",
                        { username: "#{@username}@#{@realm}", password: @password })
