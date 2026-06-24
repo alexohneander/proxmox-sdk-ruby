@@ -11,9 +11,9 @@ RSpec.describe Proxmox::Client do
     # We stub login to avoid network calls during initialization
     allow_any_instance_of(Proxmox::Client).to receive(:login)
     described_class.new(
-      base_url: base_url,
-      username: username,
-      password: password
+      base_url:,
+      username:,
+      password:
     )
   end
 
