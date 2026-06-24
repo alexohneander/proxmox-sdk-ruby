@@ -8,6 +8,10 @@ module Proxmox
         @client = client
       end
 
+      def inspect
+        "#<Proxmox::Resources::Cluster client_url=#{@client.base_url}>"
+      end
+
       def log(max: nil)
         params = {}
         params[:max] = max unless max.nil?
@@ -38,9 +42,8 @@ module Proxmox
         @client.request(:get, "/cluster/tasks")
       end
 
-      # Getting all Nodes
       def nodes
-        @client.request(:get, "/nodes")
+        @client.nodes
       end
     end
   end
