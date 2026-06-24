@@ -113,7 +113,7 @@ module Proxmox
     end
 
     def set_body(req, body)
-      req.body = body.to_json if body
+      req.body = body if body
     end
 
     def ensure_success!(response)
