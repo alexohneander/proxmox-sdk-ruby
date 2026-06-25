@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    proxmox-sdk (0.1.2)
+    proxmox-sdk (0.1.4)
       faraday (~> 2.14)
 
 GEM
@@ -81,7 +81,7 @@ GEM
     tsort (0.2.0)
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
-    unicode-emoji (4.1.0)
+    unicode-emoji (4.2.0)
     uri (1.1.1)
 
 PLATFORMS
